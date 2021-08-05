@@ -1,0 +1,64 @@
+.nav {
+  background-color: $color-yellow;
+  z-index: 1000;
+  transition: all 0.3s;
+  
+
+  &__box {
+    max-width: 100rem;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__home-link,
+  &__home-link:visited,
+  &__home-link:link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-primary-blue;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    
+  @include respond(phone) {
+    display: none;
+}
+
+    ul {
+    margin-right: 3rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    }
+
+  }
+
+  &__link,
+  &__link:visited,
+  &__link:link {
+    color: $color-primary-blue;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}
+.nav-home {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $color-yellow;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  
+  @include respond(phone) {
+    display: none;
+}
+}

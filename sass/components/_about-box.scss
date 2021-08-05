@@ -1,0 +1,21 @@
+.about {
+    &__box {
+        width: 20rem;
+        text-align: center;
+    }
+
+    &__count {
+        font-size: 4rem;
+        color: #4d90fe;
+        margin-bottom: -1.5rem;
+
+        span {
+            -webkit-text-stroke: 0;
+            font-size: 3.5rem;
+            margin-top: -1rem;
+            margin-left: .5rem;
+            color: $color-primary-blue;
+        }
+    }
+
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/img/favicon.png"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Astrology, Marraige, Kumbhabishegam, Homam, Pariharam, Namakaranam, Marraige matching, Numerology, Vaasthu.">
+  <meta name="keywords" content="prohithar, astrologer, astrology, best astrologer, homam, pariharam, online homam, online pariharam, tamilnadu, madurai prohithar, kumbhabhishekham, kumbabisegam, kumbhabisegam, kumbabhisegam, namakaranam, baby names, names, marraige, wedding, thithi, shradham, horoscope, astrologer in madurai, prohithar in madurai, prohithar in tamilnadu, prohithar in tamil nadu, ramesh, ramesh iyengar, iyengar, iyer, iyer in madurai, iyengar in madurai, tamil astrologer">
+  <meta name="author" content="Ramesh Iyengar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramesh Iyengar</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <nav class="nav-home" id="nav-home">
+      <div class="nav__box">
+      <a href="/" class="nav__home-link">Sourashtra prohitha sangam</a>
+      <li class="nav__links">
+          <ul><a onclick='uncheck()' href="/#homam" class="nav__link">Homam</a></ul>
+          <ul><a onclick='uncheck()' href="/#pariharam" class="nav__link">Pariharam</a></ul>
+          <ul><a onclick='uncheck()' href="/galary" class="nav__link">Galary</a></ul>
+      </li>
+  </div>
+  </nav>
+  
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a href="/" class="navigation__link"><span>01 </span>Home</a></li>
+            <li class="navigation__item"><a href="/galary" class="navigation__link"><span>02 </span>Galary</a></li>
+            </ul>
+    </nav>
+</div>
+
+    <header class="header">
+      <div class="sps">
+        <div class="sps__content">
+        <a href="/galary" class="nav-link">Galary</a>
+          <div class="cta-box">
+            <h2 class="sh"><span>Sourashtra</span>prohitha sangam</h1>
+            <h1 class="ph">N.G. Ramesh <span>Iyengar</span></h1>
+            <h3 class="th">Archagar | Prohithar | Jothidar</h1>
+          </div>
+          <img
+            class="lakshmi-img"
+            src="/img/lakshmi.png"
+            alt="Lakshmi Narayanan"
+          />
+        </div>
+      </div>
+      <div class="ri">
+        <div class="ri__content">
+          <img class="ri__img" src="/img/ri_img.png" alt="Ramesh Iyengar" />
+          <div class="ri__box">
+            <h1 class="heading--1">
+              +91 98421 53239
+            </h1>
+            <div class="links">
+            <a target="blank" href="https://api.whatsapp.com/send?phone=+919842153239" class="wa"><img class="wa-img" src="/img/wa-logo.png" alt="Whatsapp"></a>
+            <a href="tel:+919842153239" class="phone"><img class="phone-img" src="/img/phone.png" alt="Phone"></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="separator-box">
+      <img class="separator" src="img/separator.svg" alt="separator">
+    </div>
+
+    <main>
+    <section class="about-section">
+      <div class="about">
+        <div class="about__box">
+          <h2 class="about__count">100<span>+</span></h2>
+          <h3 class="about__title detail--light">Kumbhabhishekham</h3>
+        </div>
+        <div class="about__box">
+          <h2 class="about__count">5000<span>+</span></h2>
+          <h3 class="about__title detail--light">Homam</h3>
+        </div>
+        <div class="about__box">
+          <h2 class="about__count">1000<span>+</span></h2>
+          <h3 class="about__title detail--light">Pariharam</h3>
+        </div>
+      </div>
+      <h3 class="about__since detail--light">Since 1995</h3>
+    </section>
+
+    
+    <div class="separator-box">
+      <img class="separator" src="img/separator.svg" alt="separator">
+    </div>
+
+    <section class="services-section">
+      <h2 class="section-title">வைபவங்கள்</h2>
+      <div class="services"> 
+        
+        <% for (var i = 0; i < servicesLg.length; i++) { %>
+        <div class="services__box">
+          <img src= <%= servicesLg[i].url %> alt="<%= servicesLg[i].title %>"
+          class="services__img">
+          <h3 class="services__title"><%= servicesLg[i].title %></h3>
+        </div>
+        <div class="services__desc"><h4 class="desc"><%= servicesLg[i].desc %></h4></div>
+        <% } %>
+
+        <% for (var i = 0; i < services.length; i++) { %>
+        <div class="services__box">
+          <img src= <%= services[i].url %> alt="Wedding"
+          class="services__img">
+          <h3 class="services__title"><%= services[i].title %></h3>
+        </div>
+        <% } %>
+
+
+        <div class="services__astrology">
+          <div class="astrology__left">
+            <h2>Astrology</h2>
+            <h2>ஜோதிடம்</h2>
+          </div>
+          <div class="astrology__right">
+            <h3>ஜாதகம் பலன்கள் பார்க்கப்படும்</h3>
+            <h3>ஜாதக பொருத்தம் பார்க்கப்படும்</h3>
+            <h3>ஜாதகம் நோட்டில் எழுதிக் கொடுக்கப்படும்</h3>
+            <h3>ஆன்லைனில் WhatsApp ல் ஜாதக பலன்களை 
+              கேட்டுக் கொள்ளலாம்</h3>
+          </div>
+        </div>
+        <div class="services__sm-grp">
+        <div class="services__sm-box">
+          <h3 class="title">Upanayanam</h3>
+        </div>
+        <div class="services__sm-box">
+          <h3 class="title">Pumsavanam</h3>
+        </div>
+        <div class="services__sm-box">
+          <h3 class="title">Puthu kanakku</h3>
+        </div>
+      </div>
+      <div class="services__sm-grp">
+        <div class="services__sm-box">
+          <h3 class="title">Shashtiabdha poorthi</h3>
+        </div>
+        <div class="services__sm-box">
+          <h3 class="title">Beemaratha Shanthi</h3>
+        </div>
+        <div class="services__sm-box">
+          <h3 class="title">Asithiabdha poorthi</h3>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <div class="separator-box">
+    <img class="separator" src="img/separator.svg" alt="separator">
+  </div>
+
+    <section class="product-section">
+      <h2 class="section-title">Products</h2>
+
+      <% for (var i = 0; i < products.length; i++) { %>
+      <div class="product">
+        <div class="product__grp">
+        <img src= <%= products[i].imgUrl %> alt= <%= products[i].title %> class="product__img">
+        <div class="product__details">
+          <h3 class="product__title">
+            <%= products[i].title %>
+          </h3>
+          <h4 class="product__cn">NOVA Software company</h4>
+        </div>
+      </div>
+        <a target="blank"
+          href= <%= products[i].url %>
+          class="product__btn"
+        ></a>
+      </div>
+      <% } %>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact">
+      <div class="contact__details">
+        <h3 class="contact__name">Ramesh Iyengar</h3>
+        <div class="contact__pb">
+          <h4 class="contact__sm">+91 98421 53239</h4>
+          <a target="blank" href="https://api.whatsapp.com/send?phone=+919842153239" class="wa"><img class="wa-img" src="/img/wa-logo.png" alt="Whatsapp"></a>
+          <a href="tel:+919842153239" class="phone"><img class="phone-img" src="/img/phone.png" alt="Phone"></a>
+        </div>
+        <h4 class="contact__sm">Plot no. 'P', Kuberan street,
+          Sri mahalakshmi nagar, 
+          Kathirvel theater complex,
+          Villapuram, Madurai,
+          Tamil Nadu, India.</h4>
+          <h4 class="contact__sm">Pin code - 625012.</h4>
+      </div>
+        <a href="https://www.google.com/maps/place/Ramesh+iyengar/@9.9019471,78.1159718,15z/data=!4m5!3m4!1s0x0:0xd6f679ea5df3967a!8m2!3d9.9016108!4d78.1218852" target="blank" class="map">
+          <figure class="map__fig">
+            <img src="img/map.png" alt="Person on a tour" class="contact__map">
+            <figcaption class="contact__map--link">View map</figcaption>
+        </figure>
+          </a>
+    </div>
+    </section>
+
+    <section id="homam" class="card__section">
+      <h2 class="section-title">ஹோம பலன்கள்</h2>
+      <div class="card__grid">
+        <% for (var i = 0; i < homams.length; i++) { %>
+          <div class="card__card span-<%= homams[i].span %> h-<%= homams[i].height %>
+            <% if(i >= 3){ %>
+              more
+          <% } %>
+             "
+            >
+            <img src=<%= homams[i].imgUrl %> alt=<%= homams[i].eTitle %> class="card__img">
+            <h3 class="card__title"><%= homams[i].eTitle %></h3>
+            <h3 class="card__title"><%= homams[i].tTitle %></h3>
+            <h4 class="card__desc"><%= homams[i].desc %></h4>
+          </div>
+        <% } %> 
+      </div>
+      <button onclick='myFunction()' id="showBtn">Show more</button>
+
+    </section>
+
+    <div class="separator-box mb-0">
+      <img class="separator" src="img/separator.svg" alt="separator">
+    </div>
+
+    <section id="pariharam" class="card__section">
+      <h2 class="section-title">பரிகார பலன்கள்</h2>
+      <div class="card__grid">
+        <% for (var i = 0; i < pariharams.length; i++) { %>
+          <div class="card__card span-<%= pariharams[i].span %> h-<%= pariharams[i].height %>
+            <% if(i >= 3){ %>
+              more
+          <% } %>
+             "
+            >
+            <img src=<%= pariharams[i].imgUrl %> alt=<%= pariharams[i].eTitle %> class="card__img">
+            <h3 class="card__title"><%= pariharams[i].eTitle %></h3>
+            <h3 class="card__title"><%= pariharams[i].tTitle %></h3>
+            <h4 class="card__desc"><%= pariharams[i].desc %></h4>
+          </div>
+        <% } %> 
+      </div>
+
+    </section>
+
+  </main>
+
+    <footer class="footer">
+      <div class="links">
+        <a href="/" class="link">Home</a>
+        <div class="separator"></div>
+        <a href="#homam" class="link">Homam</a>
+        <div class="separator"></div>
+        <a href="#pariharam" class="link">Pariharam</a>
+        <div class="separator"></div>
+        <a href="/galary" class="link">Galary</a>
+      </div>
+      <h4 class="copyright">© Sourashtra prohitha sangam. All rights reserved</h4>
+    </footer>
+
+
+<script>
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+
+  if (currentScrollPos < 200) {
+    document.getElementById("nav-home").style.opacity = 0;
+    document.getElementById("nav-home").style.visibility = "hidden";
+  } else {
+    document.getElementById("nav-home").style.opacity = 1;
+    document.getElementById("nav-home").style.visibility = "visible";
+  }
+}
+
+function uncheck () {
+  document.getElementById("navi-toggle").checked = false;
+    }
+
+  function myFunction() {
+    var moreText = document.getElementsByClassName("more");
+    var btnText = document.getElementById("showBtn");
+
+    if (btnText.innerHTML === "Show less") {
+      btnText.innerHTML = "Show more";
+      for(let i = 0; i < moreText.length; i++){
+      moreText[i].style.display = "none";
+      window.scroll(0, btnText.offsetTop -500)
+      }
+    } else {
+      btnText.innerHTML = "Show less";
+      for(var i = 0; i < moreText.length; i++){
+      moreText[i].style.display = "initial";
+      }
+    }
+  }
+</script>
+  </body>
+</html>

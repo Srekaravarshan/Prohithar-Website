@@ -1,0 +1,66 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+}
+
+.heading--1 {
+    font-size: 3rem;
+    color: $color-primary-blue;
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+}
+
+.detail--light {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.border-text {
+    -webkit-text-stroke: .1rem black;
+}
+
+.section-title {
+    font-size: 4rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+
+
+.ph {
+    font-size: 4.5rem;
+    color: rgb(236, 65, 2);
+    @include respond(phone) {
+        font-size: 4rem;
+    }
+
+    span {
+        margin-top: -3rem;
+        margin-bottom: 0 !important;
+    }
+}
+
+.sh {
+    font-size: 3.6rem;
+    color: $color-primary-blue;
+    font-weight: 600;
+    font-family: 'Crimson Text', serif;
+    line-height: 1.6;
+    @include respond(phone) {
+        font-size: 3rem;
+    }
+}
+
+.th {
+    font-size: 2.6rem;
+    color: $color-primary-blue;
+    font-weight: 400;
+    font-family: 'Crimson Text', serif;
+    
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+}

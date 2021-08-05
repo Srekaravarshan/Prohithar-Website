@@ -1,0 +1,24 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/about-box";
+@import "components/services-box";
+@import "components/product-box";
+@import "components/separator";
+@import "components/button";
+@import "components/nav";
+@import "components/sm-box";
+
+@import "layout/header";
+@import "layout/galary";
+@import "layout/grid";
+@import "layout/footer";
+@import "layout/navigation";
+
+@import "pages/home";

@@ -1,0 +1,70 @@
+.product {
+  display: flex;
+  width: 60rem;
+  justify-content: space-between;
+
+  @include respond(phone) {
+    width: 90%;
+    max-width: 45rem;
+    flex-direction: column;
+  }
+
+  &__grp {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      justify-content: start;
+    }
+
+  }
+
+  &__img {
+    height: 15vw;
+    width: 15vw;
+
+    max-height: 7.5rem;
+    max-width: 7.5rem;
+
+    border-radius: 0.4rem;
+  }
+
+  &__details {
+    align-self: stretch;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include respond(phone) {
+      margin-left: 2rem;
+      max-width: 36rem;
+      justify-content: start;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    max-width: 37rem;
+    line-height: 1.2;
+  }
+
+  &__cn {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  &__btn {
+    background: url("../img/gp-btn.png");
+    width: 13rem;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include respond(phone) {
+      height: 4rem;
+      margin: 2.5rem auto;
+    }
+  }
+}
